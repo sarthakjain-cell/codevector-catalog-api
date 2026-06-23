@@ -1,0 +1,28 @@
+{
+  "name": "codevector-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node server.ts",
+    "seed": "ts-node seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.8.5",
+    "fastify-plugin": "^6.0.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^5.22.0",
+    "@types/node": "^26.0.0",
+    "prisma": "^5.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
