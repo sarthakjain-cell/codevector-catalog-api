@@ -2,9 +2,12 @@
 
 A high-performance backend solution for browsing a 200,000+ product catalog using **cursor-based pagination**.
 
+## Live Demo
+**Live URL:** https://codevector-catalog-api.onrender.com
+
 ## Why Cursor Pagination?
 Standard `OFFSET` / `LIMIT` pagination breaks when data is highly dynamic. If a user is on Page 1 and 50 new items are added, everything shifts down. When they load Page 2, they will see duplicate items from Page 1. 
-This backend uses cursor-based pagination with a composite index on `(created_at, id)` to guarantee that no items are ever missed or duplicated, even under heavy write loads.
+This backend uses cursor-based pagination with a composite index on `(updated_at, id)` to guarantee that no items are ever missed or duplicated, even under heavy write loads.
 
 ## Tech Stack
 - **Backend**: Node.js & Fastify
